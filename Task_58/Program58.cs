@@ -73,3 +73,6 @@ else
     int[,] arrayNew = MatrixMultiplication(arrayA,arrayB);
     PrintArray(arrayNew);
 }
+
+
+// Работает!
