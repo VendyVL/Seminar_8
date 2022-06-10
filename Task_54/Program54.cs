@@ -7,22 +7,10 @@ int[,] array54 = new int[,]
     {8, 4, 2, 4},
 };
 
-// int MaxFromArrayRow(int n, int[,] array)
-// {
-//     int j = n;
-//     int max = array[0, j];
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         if (array[i, j] > max) max = array[i, j];
-//     }
-//     return max;
-// }
 
 int[,] ArrayOrderMaxMin(int[,] array)
 {
-    int a = array.GetLength(0);
-    int b = array.GetLength(1);
-    int[,] arrayMaxMin = new int[a, b];
+    int[,] arrayMaxMin = new int[array.GetLength(0), array.GetLength(1)];
     
     int a1 = 0;
     for (int i = 0; i < array.GetLength(0); i++)
